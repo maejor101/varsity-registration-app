@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prospectus</title>
+  </head>
+
+  <body>
+    <h1>VARSITY REGISTRATION PORTAL</h1>
+
+    <!--Choose YOUR  Admission Point Score (APS) range-->
+
+    <div id="aps">
+      <label>Choose your APS</label><br />
+      <select id="apScore">
+        <option></option>
+        <option value="0">less than 20</option>
+        <option value="20">20-25</option>
+        <option value="26">26-29</option>
+        <option value="30">30+</option>
+      </select>
+    </div>
+
+    <!--Choose YOUR  school leaving subjects -->
+
+    <div id="subjects">
+      <input type="checkbox" id="subjects" name="mathemetics" value="Maths" />
+      <label for="maths"> Maths</label><br />
+      <input type="checkbox" id="subjects" name="Physics" value="Science" />
+      <label for="PHYS"> Sciences</label><br />
+      <input type="checkbox" id="subjects" name="English_FAL" value="English" />
+      <label for="ENGFAL"> English FAL</label><br />
+      <input
+        type="checkbox"
+        id="subjects"
+        name="Life_sciences"
+        value="Life Sciences"
+      />
+      <label for="LSC"> Life Sciences</label><br /><br />
+    </div>
+
+    <!--Check courses button-->
+
+    <button id="checkCourses" onclick="compare()">Check Courses</button>
+
+    <!--Varisty courses that YOU qualify for-->
+
+    <div id="courses">
+      <label>Course that you qualify for:</label><br />
+      <select id="drop">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </div>
+    <div><br /><button id="Apply" >Apply</button><br /></div>
+
+ 
+      <div id="myModal" class="modal">
+            <div class="modal-content">
+                  <form id="form">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="First_name" value=""><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="Last_name" value=""><br><br>
+                        <label for="fname">Age:</label><br>
+                        <input type="number" id="age" name="Age" value=""><br>
+                        <label for="mail">Email Address:</label><br>
+                        <input type="text" id="mail" name= Email value=""><br>
+                        <button id="sBtn" onclick="pushCourse()">Submit Application</button>
+                        <span class="close">CLOSE</span>
+                      </form> 
+                      
+                      <p id="p-color">NB: MAKE SURE YOU MEET THE REQUIREMENTS OF THE COURSE YOU  APPLY FOR</p>
+                     
+            </div>
+          </div>
+  </body>
+  <script src="index.js"></script>
+</html>
